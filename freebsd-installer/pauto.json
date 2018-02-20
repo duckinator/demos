@@ -1,0 +1,80 @@
+{
+  "templateDir": "./templates",
+  "steps": [
+    {
+      "description": "Open application menu.",
+      "before": [
+        "type 'cd ~/dev/misc/duckinator/system-config/; reset'",
+        "key Return",
+        "key ctrl+alt+r",
+        "sleep 2",
+        "type 'sudo make clean iso'",
+        "sleep 10"
+      ],
+      "after": ["click 1"]
+    },
+    {
+      "description": "Run VirtualBox.",
+      "after": ["click 1"]
+    },
+    {
+      "description": "Create a new virtual machine.",
+      "after": ["click 1"]
+    },
+    {
+      "description": "Enter a VM name.",
+      "after": [
+        "click 1",
+        "type FreeBSD"
+      ]
+    },
+    {
+      "description": "Click next. (#1)",
+      "after": ["click 1"]
+    },
+    {
+      "descriptions": "Click next. (#2)",
+      "after": ["click 1"]
+    }
+    {
+      "description": "Click next. (#3)",
+      "after": ["click 1"]
+    },
+    {
+      "description": "Create a virtual hard disk.",
+      "after": ["click 1"]
+    },
+    {
+      "description": "Click next. Again.",
+      "after": ["click 1"]
+    },
+    {
+      "description": "Click next. Yet again.",
+      "after": ["click 1"]
+    },
+    {
+      "description": "Click create.",
+      "after": ["click 1"]
+    },
+    {
+      "description": "Start the virtual machine.",
+      "after": ["click 1"]
+    },
+    {
+      "description": "Open file dialog.",
+      "after": ["click 1"]
+    },
+    {
+      "description": "Select the ISO file.",
+      "after": ["click 1"]
+    },
+    {
+      "description": "Click 'Open'.",
+      "after": ["click 1"]
+    },
+    {
+      "description": "Click 'Start'. And then wait.",
+      "after": ["click 1"]
+    }
+  ]
+}
