@@ -4,11 +4,13 @@
     {
       "description": "Open application menu.",
       "before": [
-        "type 'cd ~/dev/misc/duckinator/system-config/; reset'",
+        "type 'cd ~/dev/misc/duckinator/system-config/freebsd-installer/; reset'",
         "key Return",
-        "key ctrl+alt+r",
+        "sleep 2",
+        "search --name \"OBS 21\" key --window \"%1\" space",
         "sleep 2",
         "type 'sudo make clean iso'",
+        "key Return",
         "sleep 10"
       ],
       "after": ["click 1"]
@@ -35,7 +37,7 @@
     {
       "descriptions": "Click next. (#2)",
       "after": ["click 1"]
-    }
+    },
     {
       "description": "Click next. (#3)",
       "after": ["click 1"]
@@ -56,6 +58,26 @@
       "description": "Click create.",
       "after": ["click 1"]
     },
+
+
+    {
+      "describe": "Click settings.",
+      "after": ["click 1"]
+    },
+    {
+      "describe": "Click \"System\".",
+      "after": ["click 1"]
+    },
+    {
+      "describe": "Click \"Hard Disk\".",
+      "after": ["click 1"]
+    },
+    {
+      "describe": "Click OK.",
+      "after": ["click 1"]
+    },
+
+
     {
       "description": "Start the virtual machine.",
       "after": ["click 1"]
@@ -72,6 +94,8 @@
       "description": "Click 'Open'.",
       "after": ["click 1"]
     },
+
+
     {
       "description": "Click 'Start'. And then wait.",
       "after": ["click 1"]
